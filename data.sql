@@ -1,0 +1,16 @@
+\c book_test
+-- for testing 
+
+DROP TABLE IF EXISTS books;
+
+CREATE TABLE books (
+  isbn TEXT PRIMARY KEY,
+  amazon_url TEXT,
+  author TEXT,
+  language TEXT, 
+  pages INTEGER,
+  publisher TEXT,
+  title TEXT, 
+  year INTEGER
+);
+

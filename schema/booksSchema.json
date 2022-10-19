@@ -1,0 +1,93 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "$id": "http://example.com/example.json",
+  "type": "object",
+  "default": {},
+  "title": "Book Schema",
+  "required": [
+      "isbn",
+      "amazon_url",
+      "author",
+      "language",
+      "pages",
+      "publisher",
+      "title",
+      "year"
+  ],
+  "properties": {
+      "isbn": {
+          "type": "integer",
+          "default": 0,
+          "title": "The isbn Schema",
+          "examples": [
+              123456789
+          ]
+      },
+      "amazon_url": {
+          "type": "string",
+          "default": "",
+          "title": "The amazon_url Schema",
+          "examples": [
+              "https://www.amazon.com/Mad-Honey-Novel-Jodi-Picoult-ebook/dp/B09Q7XH3N8/ref=sr_1_7?crid=3Q05SLOIADVW3\u0026keywords=book\u0026qid=1666197687\u0026qu=eyJxc2MiOiI0Ljg3IiwicXNhIjoiNi44NyIsInFzcCI6IjQuMTIifQ%3D%3D\u0026s=digital-text\u0026sprefix=book%2Cdigital-text%2C180\u0026sr=1-7"
+          ]
+      },
+      "author": {
+          "type": "string",
+          "default": "",
+          "title": "The author Schema",
+          "examples": [
+              "Jodi Picoult"
+          ]
+      },
+      "language": {
+          "type": "string",
+          "default": "",
+          "title": "The language Schema",
+          "examples": [
+              "Englsih"
+          ]
+      },
+      "pages": {
+          "type": "integer",
+          "default": 0,
+          "title": "The pages Schema",
+          "examples": [
+              123
+          ]
+      },
+      "publisher": {
+          "type": "string",
+          "default": "",
+          "title": "The publisher Schema",
+          "examples": [
+              "Penguin House"
+          ]
+      },
+      "title": {
+          "type": "string",
+          "default": "",
+          "title": "The title Schema",
+          "examples": [
+              "Mad Honey"
+          ]
+      },
+      "year": {
+          "type": "integer",
+          "default": 0,
+          "title": "The year Schema",
+          "examples": [
+              2018
+          ]
+      }
+  },
+  "examples": [{
+      "isbn": 123456789,
+      "amazon_url": "https://www.amazon.com/Mad-Honey-Novel-Jodi-Picoult-ebook/dp/B09Q7XH3N8/ref=sr_1_7?crid=3Q05SLOIADVW3\u0026keywords=book\u0026qid=1666197687\u0026qu=eyJxc2MiOiI0Ljg3IiwicXNhIjoiNi44NyIsInFzcCI6IjQuMTIifQ%3D%3D\u0026s=digital-text\u0026sprefix=book%2Cdigital-text%2C180\u0026sr=1-7",
+      "author": "Jodi Picoult",
+      "language": "Englsih",
+      "pages": 123,
+      "publisher": "Penguin House",
+      "title": "Mad Honey",
+      "year": 2018
+  }]
+}
